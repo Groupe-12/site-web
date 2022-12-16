@@ -3,20 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yummy Bootstrap Template - Index</title>
+  <title>Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +22,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <script src="my.js"></script>
 
 </head>
 
@@ -46,540 +45,444 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Accueil</a></li>
-          <li><a href="#about">Saison</a></li>
-          <li><a href="#gallery">Recette</a></li>
-          <li><a href="#menu">Nous</a></li>
+          <li><a href="#about">Saisons</a></li>
+          <li><a href="shop.html">Produits</a></li>
+          <li><a href="#gallery">Recettes</a></li>
+          <li><a href="#menu">DicoSanté<span style="color: red;">?</span></a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
+    
+      <div  class="icon"  style="width:20%;height:30%">
+      <div class="logo">
 
-      <a class="btn-book-a-table" href="#book-a-table">Connection</a>
+      <a class="btn-book-a-table" id="1" href="Ins.html" data-title="Connection" >
+      <i class="bi bi-person-fill" style="font-size:15px" ></i></a>
+   
+      <a class="btn-book-a-table" id="2" href="wishlist.html" data-title="Préférer">
+      <i class="bi bi-heart-fill" style="font-size:15px" ></i></a>
+      
+     </div>
+     </div>
+     <div class="mobile">
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+     </div>
+      
+      
+   
 
+ 
     </div>
+    
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+
+  <!-- ======= 搜索框 Section(my.js) ======= -->
+
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
+      
+      
+      
+
       <div class="row justify-content-between gy-5">
+        
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <input type="search"><button>Rechercher</button>
-          <h2 data-aos="fade-up">Entrez le nom<br>Et laissez vous guider</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+
+          <div class="login" style="width: 60%;margin-bottom: -50px;">
+            <img src="assets/img/55.gif" style="width:35%;height:50%">
+          </div>
+
+
+          <div id="out" class="container2" > 
+         
+            <div  class="finder" style="padding-top: -30px;">
+              <div class="finder__outer" id="ser_box">
+                <div class="finder__inner" id="finder__inner"  >
+                     
+                <!--my.js-->
+                
+                  <i class="fa fa-search" type='button' id='su' ref="icon" onclick="javascript:window.location.href='shop.html';" style="font-size:24px"></i>
+                  &nbsp;&nbsp;&nbsp;
+            
+                  <input class="finder__input" type="text" name="q" id='ipt' placeholder="Ex: banane"  />
+          
+          
+          
+          
+            </div>
+          </div>
+          
+            <div id="bot_box">
+              <ul id="oul"></ul>
+            </div>
+          
+          </div>
+          </div>
+          
+          <h2 style="padding-top: 14%;font-family:Marker Felt, fantasy;font-size: 250%;margin-left: 5%;" data-aos="fade-up">Entrez le nom et laissez <br>vous guilder</h2>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/IMG_9529.PNG" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
       </div>
     </div>
   </section><!-- End Hero Section -->
+<style>
+  #bot_box ul li{
+		list-style: none;
+		line-height: 25px;
+		padding-left: 10px;
+    text-align: left;
+
+		}
+    
+</style>
+<style type="text/css">
+  .login,.info{
+      display: inline-block;
+      vertical-align: middle;
+  }
+  a{
+      color: #000;
+      text-decoration: none;
+  }
+</style>
+
+
 
   <main id="main">
 
-    <!-- ======= Why Us Section ======= -->
+    <!-- ======= 季节 Section ======= -->
     <section id="about" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
+        <div class="row justify-content-center">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="why-box">
-              <h3>Why Choose Yummy?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-              </p>
-              <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End Why Box -->
-
-          <div class="col-lg-8 d-flex align-items-center">
-            <div class="row gy-4">
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-            </div>
+          <div class="col-xl-3 col-md-6 col-sm-10">
+          <div class="single-service" >
+          <div class=" icon-box content align-items-center flex-column d-flex"> 
+          <i class="bi bi-sunrise"></i>
+          <h4>Printemps</h4>
+          <p>fort en vitamine C, favoriserait la digestion, rendrait les dents blanches.</p>
+          <a href="javascript:void(0)">Citron
+         
+          </a>
           </div>
-
+          </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-sm-10">
+            <div class="single-service">
+            <div class=" icon-box content align-items-center flex-column d-flex"> 
+            <i class="bi bi-sun"></i>
+            <h4>Été</h4>
+            <p>La fraise est très riche en vitamine C et riche en vitamine B9 (acide folique).</p>
+            <a href="javascript:void(0)">Fraise
+           
+            </a>
+            </div>
+            </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-10">
+              <div class="single-service">
+              <div class=" icon-box content align-items-center flex-column d-flex"> 
+              <i class="bi bi-sun-fill"></i>
+              <h4>Automne</h4>
+              <p>La citrouille contient une quantité particulièrement intéressante de caroténoïdes.</p>
+              <a href="javascript:void(0)">Citrouille
+             
+              </a>
+              </div>
+              </div>
+              </div>
+              <div class="col-xl-3 col-md-6 col-sm-10">
+                <div class="single-service">
+                <div class=" icon-box content align-items-center flex-column d-flex"> 
+                <i class="bi bi-sunset"></i>
+                <h4>Hiver</h4>
+                <p>Compris les caroténoïdes, les flavonoïdes, les acides gras, les phénols et divers acides aminés.</p>
+                <a href="javascript:void(0)">Plaquemine
+               
+                </a>
+                </div>
+                </div>
+                </div>
         </div>
 
       </div>
+      <br><br><br>
     </section><!-- End Why Us Section -->
 
-        <!-- ======= Menu Section ======= -->
-        <section id="gallery" class="menu">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-header">
-              <h2>Our Menu</h2>
-              <p>Check Our <span>Yummy Menu</span></p>
-            </div>
-    
-            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-    
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-                  <h4>Starters</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-                  <h4>Breakfast</h4>
-                </a><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-                  <h4>Lunch</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-                  <h4>Dinner</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-            </ul>
-    
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-    
-              <div class="tab-pane fade active show" id="menu-starters">
-    
-                <div class="tab-header text-center">
-                  <p>Menu</p>
-                  <h3>Starters</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Magnam Tiste</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $5.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Aut Luia</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $14.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Est Eligendi</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $8.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Laboriosam Direva</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $9.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Starter Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-breakfast">
-    
-                <div class="tab-header text-center">
-                  <p>Menu</p>
-                  <h3>Breakfast</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Magnam Tiste</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $5.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Aut Luia</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $14.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Est Eligendi</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $8.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Laboriosam Direva</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $9.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Breakfast Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-lunch">
-    
-                <div class="tab-header text-center">
-                  <p>Menu</p>
-                  <h3>Lunch</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Magnam Tiste</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $5.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Aut Luia</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $14.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Est Eligendi</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $8.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Laboriosam Direva</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $9.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Lunch Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-dinner">
-    
-                <div class="tab-header text-center">
-                  <p>Menu</p>
-                  <h3>Dinner</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Magnam Tiste</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $5.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Aut Luia</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $14.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Est Eligendi</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $8.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Eos Luibusdam</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $12.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                    <h4>Laboriosam Direva</h4>
-                    <p class="ingredients">
-                      Lorem, deren, trataro, filede, nerada
-                    </p>
-                    <p class="price">
-                      $9.95
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Dinner Menu Content -->
-    
-            </div>
-    
-          </div>
-        </section><!-- End Menu Section -->
-    <!-- ======= Stats Counter Section ======= -->
+
+    <!-- ======= 分割 Section ======= -->
     <section id="stats-counter" class="stats-counter">
       <div class="container" data-aos="zoom-out">
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
+          
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
+         
 
         </div>
 
       </div>
+      
+      
     </section><!-- End Stats Counter Section -->
-  
 
-    <!-- ======= About Section ======= -->
-    <section id="menu" class="about">
+    
+
+    <!-- ======= 菜单 Section ======= -->
+    
+      
+    <section id="gallery" class="menu" style="background-color:#eee;padding-top: 2%;padding-bottom: 2%">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
+         
+          <p style="padding-top:2%"> Quelques recettes sympathiques<span>!</span></p>
         </div>
 
-        <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <h4>Book a Table</h4>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div>
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                <a href="#" class="glightbox play-btn"></a>
-              </div>
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Entrée</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Plat</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Dessert</h4>
+            </a>
+          </li><!-- End tab nav item -->
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Entrée</h3>
             </div>
-          </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/1.png" class="glightbox"><img src="assets/img/menu/1.png" class="menu-img img-fluid" ></a>
+                <h4 style="padding-top: 2rem;"><a êlée printanière ail et persil href="https://www.cuisineaz.com/recettes/poelee-printaniere-ail-et-persil-17046.aspx"> êlée printanière ail et persil</a></h4>
+                <p class="ingredients">
+                  haricots verts, ail et persil, carottes, pois, tomates
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/7.png" class="glightbox"><img src="assets/img/menu/7.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;" align="centre"><a href="https://www.cuisineaz.com/recettes/salade-d-epinards-fraises-et-avocat-103900.aspx"> Salade d'épinards, fraises et avocat </a></h4>
+                <p class="ingredients">
+                  épinard, fraise, avocat, menthe, vinaigre
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/8.png" class="glightbox"><img src="assets/img/menu/8.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineactuelle.fr/recettes/salade-d-avocats-et-pamplemousses-aux-crevettes-201185">Salade d'avocats et pamplemousses aux crevettes</a></h4>
+                <p class="ingredients">
+                  Crevette, avocat, citron
+                </p>
+                
+              </div><!-- Menu Item -->
+
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Plat</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/2.png" class="glightbox"><img src="assets/img/menu/2.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/taboule-printanier-79735.aspx"> Taboulé printanier</a></h4>
+                <p class="ingredients">
+                  semoule, fèves, tomates, oignons, fromage
+                </p>
+               
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/6.png" class="glightbox"><img src="assets/img/menu/6.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/tarte-a-la-laitue-et-saumon-frais-facon-printaniere-78950.aspx"> Tarte à la laitue et saumon frais</a></h4>
+                <p class="ingredients">
+                  Pâte, laitue, saumon, carotte, pois, œuf, ricotta, parmesan
+                </p>
+                
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/9.png" class="glightbox"><img src="assets/img/menu/9.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/recette-de-jarret-de-boeuf-au-barbecue-82990.aspx">jarret de bœuf au barbecue</a></h4>
+                <p class="ingredients">
+                  Bœuf, citron vert, miel, sauce au piment
+                </p>
+                
+              </div><!-- Menu Item -->
+
+
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Dessert</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/3.png" class="glightbox"><img src="assets/img/menu/3.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/smoothie-pomme-orange-et-carotte-102908.aspx"> Smoothie pomme, orange et carotte</a></h4>
+                <p class="ingredients">
+                  Carotte, pomme, orange, glaçon, sucre
+                </p>
+              
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/4.png" class="glightbox"><img src="assets/img/menu/4.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/smoothie-aux-prunes-82389.aspx"> Smoothie aux prunes</a></h4>
+                <p class="ingredients">
+                  Prune, yaourt, lait, miel, menthe
+                </p>
+              
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/5.png" class="glightbox"><img src="assets/img/menu/5.png" class="menu-img img-fluid" alt=""></a>
+                <h4 style="padding-top: 2rem;"><a href="https://www.cuisineaz.com/recettes/smoothie-pomme-banane-78442.aspx"> Smoothie pomme banane</a></h4>
+                <p class="ingredients">
+                  Banane, pomme, yaourt, menthe, avoine
+                </p>
+               
+              </div><!-- Menu Item -->
+
+
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
         </div>
 
       </div>
+</section><!-- End Menu Section -->
+   
+  
+    <!-- ======= 关于我们 Section ======= -->
+    <section id="menu" class="about" style="background-color:white" >
+      <div class="container" data-aos="fade-up" >
+       
+        <div  class="abou">
+          <div class="containe">
+             <div class="ro">
+                <div class="col-md-12">
+                  <div class="section-header">
+         
+                    <p style="padding-top:2%"> Qu’est ce que DicoSanté<span>?</span></p>
+                  </div>
+                   
+
+                </div>
+             </div>
+             <div class="containe" style="background-image: url('assets/img/about.png');background-size:100% 100%;background-repeat:no-repeat;">
+                <div class="ro">
+                   <div class="col-md-10 offset-md-1">
+                      <div class="about_img">
+                         <div class="about_box">
+                            <h3 style="font-size:250%">DicoSanté</h3><br>
+                            <p style="line-height:150%; text-align: justify;font-size:100%">
+                              DicoSanté est un outil qui permet aux utilisateurs d’avoir à disposition un dictionnaire sur les aliments du monde entier, tout en profitant des options qui leur permettent d’améliorer la gestion quotidienne.
+                              <br>
+
+
+                              L’utilisateur en recherchant le produit, peut obtenir des informations sur les apports caloriques de l’aliment concerné. Il peut également enregistrer l’aliment recherché dans sa liste de favoris, et ainsi profiter d’une proposition de recette personnalisée. <span id="dots">....</span><span id="more">
+                              L’utilisateur peut surtout comparer le prix de l’aliment parmi différents points de vente. 
+                              <br>
+                              
+                              
+                              Nous catégorisons également des aliments par saison, ainsi de pouvoir favoriser le circuit court et réduire l’emprunt carbone.
+                            </span>
+                              
+                            </p>
+                              <a class="read_more" style="font-size:130%" onclick="myFunction()" id="myBtn">Plus d’informations</a>
+                           
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+        
+
+      </div>
+      <br><br><br>
     </section><!-- End About Section -->
 
 
+    <style>
+       #more {display: none;}
+    </style>
+    <script>
+      function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Plus d’informations";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Moins d’informations ";
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+
+
+ 
 
 
 
-    <!-- ======= Testimonials Section ======= -->
+
+
+    
+  
+
+    <!-- ======= 客户评论 Section ======= -->
+   
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>What Are They <span>Saying About Us</span></p>
+          <p style="padding-top:2%">Commentaire</p>
         </div>
 
         <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -592,7 +495,7 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        C'est très pratique. Ma fonction préférée est la recette saine. Je rentre souvent du travail et je m'inquiète de ne pas savoir quoi manger pour le dîner. À ce moment, je vais me référer au menu de la recette saine. Cela me donne un beaucoup de référence.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>Saul Goodman</h3>
@@ -616,10 +519,10 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        网页设计的简约美观，我非常喜欢！
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Sara Wilsson</h3>
+                      <h3>Sara Wu</h3>
                       <h4>Designer</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -640,7 +543,7 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        C'est un site vraiment sympa ! J'ai un supermarché et je peux juger si je dois augmenter l'achat de certains produits (comme les bananes, les pommes, les carottes, etc.)
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>Jena Karlis</h3>
@@ -664,11 +567,11 @@
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        Très pratique! J'ai besoin de rester en forme donc j'utilise cette page pour faire une recherche pour voir combien de grammes je consomme quand j'ai envie de quelque chose avec des calories incertaines.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
                       <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
+                      <h4>Athlete</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
@@ -689,138 +592,27 @@
     </section><!-- End Testimonials Section -->
 
 
-
-    <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Book A Table</h2>
-          <p>Book <span>Your Stay</span> With Us</p>
-        </div>
-
-        <div class="row g-0">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
-            </form>
-          </div><!-- End Reservation Form -->
-
-        </div>
-
-      </div>
-    </section><!-- End Book A Table Section -->
-
-
-
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    
+    <section id="contact" class="contact" style="background-color:#FFF;padding-top: 2%;">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Need Help? <span>Contact Us</span></p>
+        <div class="section-header" style="padding-bottom:4%">
+          <p>Besoin d'aide? <span>Contactez-nous</span></p>
         </div>
+       
 
-        <div class="mb-3">
-          <!-- <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-map flex-shrink-0"></i>
-              <div>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-                  <strong>Sunday:</strong> Closed
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4" style="padding-top:1%;padding-bottom: 20%;">
           <div class="row">
             <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Prénom" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
           </div>
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -830,27 +622,35 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit">Envoyer le Message</button></div>
         </form>
+               
+
+       
+
+      
+        
         <!--End Contact Form -->
 
-      </div>
+        </div><br><br>
     </section><!-- End Contact Section -->
 
+    
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+  <!-- ======= 脚注 ======= -->
+ 
   <footer id="footer" class="footer">
 
-    <div class="container">
+    <div class="container" >
       <div class="row gy-3">
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div>
-            <h4>Address</h4>
+            <h4>Adresse</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
+              2 Rue du Doyen Gabriel Marty <br>
+              Toulouse, Occitanie 31000 - FRA<br>
             </p>
           </div>
 
@@ -859,32 +659,33 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Reservations</h4>
+            <h4>Téléphone</h4>
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Numéro:</strong> +1 5589 55488 55<br>
+              
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
+          <i class="bi bi-question-circle icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4>Adresse électronique</h4>
             <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
+              <strong>Email:</strong> info@example.com<br>
+          
             </p>
           </div>
         </div>
+       
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
+          <h4>Retrouvez Nous</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -893,7 +694,7 @@
 
     <div class="container">
       <div class="copyright">
-        Copyright &copy; 2022.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+        Copyright &copy; 2022
       </div>
       <div class="credits">
 
@@ -917,7 +718,460 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/my.js" type="text/javascript"></script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+<style>
+/*搜索框css*/
+  .container2 {
+  text-align: center;
+  color: #2c3e50;
+  width: 130%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  
+  form.search {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  }
+  .finder {
+  border: 1px solid #fff;
+  background-color: #f6f5f0;
+  border-radius: 15px;
+  padding: 6px;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+  -9px -9px 16px rgba(255, 255, 255, 0.5);
+
+  }
+  
+  .finder__outer {
+  display: flex;
+  width: 600px;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3,
+  inset -10px -10px 15px -10px #ffffff;
+  }
+  
+  .finder__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  }
+  
+  .finder__form {
+  flex: 1;
+  height: calc(100% + 3rem);
+  }
+  
+  .finder__input {
+  height: calc(100% + 3rem);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+  }
+  
+  .finder__icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  transition: all 0.2s;
+  box-shadow: inset 0 0 0 20px #292929;
+  border-radius: 50%;
+  position: relative;
+  
+  &:after,
+  &:before {
+  display: block;
+  content: "";
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  &:after {
+  width: 10px;
+  height: 10px;
+  background-color: #292929;
+  border: 3px solid #f6f5f0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+  
+  @at-root .active & {
+    border-width: 10px;
+    background-color: #f6f5f0;
+  }
+  }
+  
+  &:before {
+  width: 4px;
+  height: 13px;
+  background-color: #f6f5f0;
+  top: 50%;
+  left: 20px;
+  transform: rotateZ(45deg) translate(-50%, 0);
+  transform-origin: 0 0;
+  border-radius: 4px;
+  
+  @at-root .active & {
+    background-color: #292929;
+    width: 6px;
+    transform: rotateZ(45deg) translate(-50%, 25px);
+  }
+  }
+  
+  @at-root .processing & {
+  transform-origin: 50%;
+  animation: spinner 0.3s linear infinite;
+  animation-delay: 0.5s;
+  }
+  
+  @at-root .active & {
+  transform: translateY(-5px);
+  }
+  
+  
+  @keyframes spinner {
+  0% {
+  transform: rotateZ(45deg);
+  }
+  100% {
+  transform: rotateZ(405deg);
+  }
+  }
+  
+  </style>
+
+
+<style>
+/*关于我们css*/
+.titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.titlepage h2 {
+     font-size: 35px;
+     color: #090807;
+     line-height: 55px;
+     font-weight: bold;
+     padding: 0;
+     border-bottom: #0556c4 solid 1px;
+     max-width: 300px;
+     margin: auto;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.blu {
+     color: #0808ff;
+}
+
+.read_more {
+     font-size: 17px;
+     background-color: #141629;
+     color: #fff !important;
+     padding: 13px 10px;
+     width: 100%;
+     max-width: 260px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     border-radius: 30px;
+     font-weight: 500;
+}
+
+.read_more:hover {
+     background: #51fe44;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+
+
+/** three_box section **/
+
+.three_box {
+     padding: 0 40px;
+}
+
+.box_text {
+     background: #fff;
+     text-align: center;
+     padding: 50px 20px 20px 20px;
+     margin-top: -80px;
+     box-shadow: #ddd 0px 0px 14px -6px;
+}
+
+.box_text h3 {
+     color: #121010;
+     font-size: 18px;
+     font-weight: 600;
+}
+
+.box_text p {
+     font-size: 17px;
+}
+
+.box_text i {
+     padding: 6px 0px 10px 0px;
+     display: block;
+}
+
+
+/** end three_box section **/
+
+
+/** abou section **/
+
+.abou {
+     background: #fff;
+     padding: 90px 0 0px 0;
+}
+
+.abou .about_box {
+     padding: 166px 153px 30px 153px;
+}
+
+.abou .titlepage h2 {
+     max-width: 436px;
+}
+
+.abou .about_img {
+     background: url('img/about.png');
+     background-size: 100% 100%;
+     text-align: center;
+     min-height: 700px;
+}
+
+.abou .about_box h3 {
+     color: #000;
+     font-size: 27px;
+     line-height: 30px;
+     font-weight: 500;
+}
+
+.abou .about_box p {
+     color: #030303;
+     font-size: 17px;
+     line-height: 28px;
+     font-weight: 500;
+     margin-bottom: 30px;
+}
+
+.abou .about_box .read_more:hover {
+     color: #fff;
+}
+
+*,::after,::before{box-sizing:border-box}
+
+
+
+:root{
+     --blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+
+
+html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent}
+
+
+
+
+ .ro{
+     display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+
+
+
+@media (min-width:768px){
+     .offset-md-1{
+          margin-left:8.333333%
+     }
+     .col-md-10{
+          -ms-flex:0 0 83.333333%;
+          flex:0 0 83.333333%;
+          max-width:83.333333%
+     }
+     .col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}.order-md-first{-ms-flex-order:-1;order:-1}
+
+
+
+
+
+}
+
+.col-md-10,.col-md-12{
+     position:relative;
+     width:100%;
+     min-height:1px;
+     padding-right:15px;
+     padding-left:15px
+}
+
+
+
+
+
+.containe{min-width:992px!important}
+
+.containe{
+     width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto
+}
+
+@media (min-width:576px){.containe{max-width:540px}}
+
+@media (min-width:768px){.containe{max-width:720px}}
+@media (min-width:992px){
+     .containe{max-width:960px}
+
+}
+
+@media (min-width:1200px){
+     .containe{max-width:1140px}
+
+}
+
+.containe-fluid{
+     width:100%;
+     padding-right:15px;
+     padding-left:15px;
+     margin-right:auto;
+     margin-left:auto
+
+}
+
+
+
+.navbar>.containe,.navbar>.containe-fluid{
+     display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}
+
+
+
+@media (max-width:575.98px){
+     .navbar-expand-sm>.containe,.navbar-expand-sm>.containe-fluid{
+          padding-right:0;padding-left:0}}
+
+@media (min-width:576px){
+     .navbar-expand-sm>.containe,.navbar-expand-sm>.containe-fluid{
+          -ms-flex-wrap:nowrap;flex-wrap:nowrap}
+     }
+
+@media (max-width:767.98px){
+     .navbar-expand-md>.containe,.navbar-expand-md>.containe-fluid{
+          padding-right:0;padding-left:0}
+     }
+@media (min-width:768px){
+     .navbar-expand-md>.containe,.navbar-expand-md>.containe-fluid{
+          -ms-flex-wrap:nowrap;flex-wrap:nowrap
+}
+@media (max-width:991.98px){
+     .navbar-expand-lg>.containe,.navbar-expand-lg>.containe-fluid{padding-right:0;padding-left:0}}
+@media (min-width:992px){
+     .navbar-expand-lg>.containe,.navbar-expand-lg>.containe-fluid{-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+}
+@media (max-width:1199.98px){.navbar-expand-xl>.containe,.navbar-expand-xl>.containe-fluid{padding-right:0;padding-left:0}}
+@media (min-width:1200px){
+     .navbar-expand-xl>.containe,.navbar-expand-xl>.containe-fluid{
+          -ms-flex-wrap:nowrap;flex-wrap:nowrap}
+     .navbar-expand>.containe,.navbar-expand>.containe-fluid{
+               padding-right:0;padding-left:0}
+     .navbar-expand>.containe,.navbar-expand>.containe-fluid{
+          -ms-flex-wrap:nowrap;flex-wrap:nowrap}
+     }
+.about_box p{
+     margin-top:0;
+     margin-bottom:1rem
+}
+
+.about_box h3{
+     margin-top:0;
+     margin-bottom:.5rem;
+     font-family:inherit;font-weight:500;line-height:1.2;color:inherit;
+     font-size:1.75rem
+}
+.about_box h3,p{orphans:3;widows:3}
+.about_box h3{page-break-after:avoid}
+a:not([href]):not([tabindex]){
+     color:inherit;text-decoration:none
+ }
+
+}
+</style>
+
+
+
+<style>
+    .btn-book-a-table:hover::after {
+		content: attr(data-title);
+  	    display:inline-flex;
+        padding: 10px 10px;
+        border: 0px solid #ddd;
+        border-radius: 5px;
+        color: #333;
+        background-color: #EEE;
+        position: fixed;   
+        width: auto;
+        line-height:18px;
+        white-space: pre-wrap;
+    }
+    @media (min-width: 576px) {
+      div.icon{
+        display:flex; flex-direction:row;
+        --bs-gutter-x:1.0rem;
+      }
+      div.logo{
+        display:flex; flex-direction:row;
+      }
+      div.mobile{
+        padding-left: 1.5rem;
+      }
+
+
+}
+
+     
+    
+    
+    @media (max-width: 767.98px){
+      div.icon{
+        display:flex; flex-direction:row;
+        --bs-gutter-x:1.0rem;
+      }
+      div.logo{
+        display:flex; flex-direction:row;
+      }
+      div.mobile{
+        padding-left: 1.5rem;
+      }
+}
+    
+
+  </style>
